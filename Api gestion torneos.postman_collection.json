@@ -1,0 +1,413 @@
+{
+	"info": {
+		"_postman_id": "ae979ad6-c6aa-482c-a7d4-6b18e3aa90eb",
+		"name": "Api gestion torneos",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18423617"
+	},
+	"item": [
+		{
+			"name": "chefs",
+			"item": [
+				{
+					"name": "crear chef",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"specialty\": \"Cocina Mediterránea\",\r\n    \"name\": \"Deniel Buritica\",\r\n    \"experienceYears\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/chefs",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"chefs"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "actualizar chef",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"specialty\": \"Cocina Asiatica\",\r\n    \"name\": \"Harnold Lozano\",\r\n    \"experienceYears\": 5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/chefs/67a10e6c43963f23bcbb36d4",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"chefs",
+								"67a10e6c43963f23bcbb36d4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "eliminar chef",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/chefs/67a101cce90b2fb024e96d71",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"chefs",
+								"67a101cce90b2fb024e96d71"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "obtener chefs",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"specialty\": \"Cocina Mediterránea\",\r\n    \"name\": \"María López\",\r\n    \"experienceYears\": 5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/chefs",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"chefs"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "obtener chefs por id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"specialty\": \"Cocina Mediterránea\",\r\n    \"name\": \"María López\",\r\n    \"experienceYears\": 5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/chefs/67a10e6c43963f23bcbb36d4",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"chefs",
+								"67a10e6c43963f23bcbb36d4"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Tournamen",
+			"item": [
+				{
+					"name": "crear tournament",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Torneo 1\",\r\n    \"location\": \"Colombia\",\r\n    \"maxChefs\": 15\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/tournaments",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"tournaments"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "actualizar tournament",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"specialty\": \"Cocina Asiatica\",\r\n    \"name\": \"Harnold Lozano\",\r\n    \"experienceYears\": 5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/tournaments/67a10e6c43963f23bcbb36d4",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"tournaments",
+								"67a10e6c43963f23bcbb36d4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "actualizar participantes tournament",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/tournaments/67a25bb95c9883823a19c61e/register/67a10e7b43963f23bcbb36d8",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"tournaments",
+								"67a25bb95c9883823a19c61e",
+								"register",
+								"67a10e7b43963f23bcbb36d8"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "actualizar rankings",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"score\": 100\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/tournaments/67a25bb95c9883823a19c61e/submit/67a27eb22f8c0e7a384cc93c",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"tournaments",
+								"67a25bb95c9883823a19c61e",
+								"submit",
+								"67a27eb22f8c0e7a384cc93c"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "eliminar tournament",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/tournaments/67a101cce90b2fb024e96d71",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"tournaments",
+								"67a101cce90b2fb024e96d71"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "obtener tournament",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"specialty\": \"Cocina Mediterránea\",\r\n    \"name\": \"María López\",\r\n    \"experienceYears\": 5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/tournaments",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"tournaments"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "obtener rankings",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"specialty\": \"Cocina Mediterránea\",\r\n    \"name\": \"María López\",\r\n    \"experienceYears\": 5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/tournaments/67a25bb95c9883823a19c61e/ranking",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"tournaments",
+								"67a25bb95c9883823a19c61e",
+								"ranking"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "obtener tournament por id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"specialty\": \"Cocina Mediterránea\",\r\n    \"name\": \"María López\",\r\n    \"experienceYears\": 5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/tournaments/67a10e6c43963f23bcbb36d4",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"tournaments",
+								"67a10e6c43963f23bcbb36d4"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
